@@ -19,7 +19,7 @@ Nmap identified port 22 and 80. A quick test of root/admin @ SSH was unsuccessfu
 
 ## browser
 
-Browsing to the webasite on port 80 redirects to a login form. A quick sqlmap for parameter injection was not successful.
+Browsing to the website on port 80 redirects to a login form. A quick 'sqlmap' for parameter injection was not successful.
 
 ![Alt text](./login_form.png?raw=true)
 
@@ -33,14 +33,14 @@ I used these settings to brute force the site. Set to 225 threads it finishes th
 
 ## Flag 1
 
-Going down the list if findings in dirbuster, the first interesting directory is 'flag'
+Going down the list of findings in dirbuster, the first interesting directory is 'flag'
 
 ![Alt text](./flag_1.png?raw=true)
 
 
 ## Flag 2
 
-We examine robits.txt and check each directory we get to admin_area and examine the source code.
+We examine robots.txt and check each directory we get to admin_area and examine the source code.
 
 ![Alt text](./flag_2.png?raw=true)
 
@@ -63,7 +63,7 @@ The compromised credentials give us access to the GUI to try and upload files. A
 
 # Upload
 
-Upload your mailicious file to the site and visit in your browser to receive a low shell in netcat.
+Upload your malicious file to the site and visit in your browser to receive a low shell in netcat.
 
 ![Alt text](./low_shell.png?raw=true)
 
@@ -77,7 +77,7 @@ The hint in flag 3 indicates we should look for something associated with the te
 
 # SSH
 
-SSH to the target with the compromised credetnials in Flag 4.
+SSH to the target with the compromised credentials in Flag 4.
 
 ![Alt text](./technawi_shell.png?raw=true)
 
