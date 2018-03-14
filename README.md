@@ -4,9 +4,11 @@ VulnHub CTF VM Walkthrough
 
 ## netdiscover
 attacking ip: 192.178.56.102
+
 target ip: 192.168.56.103
 
 ![Alt text](./netdiscover.png?raw=true)
+
 
 ## nmap
 
@@ -14,11 +16,13 @@ Nmap identified port 22 and 80. A quick test of root/admin @ SSH was unsuccessfu
 
 ![Alt text](./nmap.png?raw=true)
 
+
 ## browser
 
 Browsing to the webasite on port 80 redirects to a login form. A quick sqlmap for parameter injection was not successful.
 
 ![Alt text](./login_form.png?raw=true)
+
 
 ## dirbuster
 
@@ -26,17 +30,20 @@ I used these settings to brute force the site. Set to 225 threads it finishes th
 
 ![Alt text](./dirbuster_settings.png?raw=true)
 
+
 ## Flag 1
 
 Going down the list if findings in dirbuster, the first interesting directory is 'flag'
 
 ![Alt text](./flag_1.png?raw=true)
 
+
 ## Flag 2
 
 We examine robits.txt and check each directory we get to admin_area and examine the source code.
 
 ![Alt text](./flag_2.png?raw=true)
+
 
 ## Flag 3
 
@@ -77,7 +84,13 @@ SSH to the target with the compromised credetnials in Flag 4.
 
 # Root
 
-Habot I check the sudo use and I see that the user can sudo. We could have read the 'flag.txt' file as technawi as well.
+<pre>
+\(*_*)
+  ( (>
+  /  \
+</pre>
+
+As habit I check the sudo use and I see that the user can sudo. We could have read the 'flag.txt' file as technawi as well.
 
 ![Alt text](./root_shell.png?raw=true)
 
@@ -89,31 +102,6 @@ CTF completed.
 ![Alt text](./flag_5.png?raw=true)
 
 
+# Thanks
 
-
-
-
-# Flag 5
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Thanks to VulnHub for the VM to download
