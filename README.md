@@ -79,7 +79,7 @@ The hint in flag 3 indicates we should look for something associated with the te
 
 SSH to the target with the compromised credetnials in Flag 4.
 
-![Alt text](./ssh.png?raw=true)
+![Alt text](./technawi_shell.png?raw=true)
 
 
 # Root
